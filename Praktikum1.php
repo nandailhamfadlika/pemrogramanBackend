@@ -15,14 +15,14 @@ class Animal {
     }
 
     # method store - menambahkan hewan baru
-    # parameter: hewan baru
+
     public function store($data) {
         $this->animal[] = $data;
         echo "$data berhasil ditambahkan.<br>";
     }
 
     # method update - memperbarui data
-    # parameter: index dan hewan baru
+
     public function update($index, $data) {
         if (isset($this->animal[$index])) {
             $dataLama = $this->animal[$index];
@@ -34,7 +34,7 @@ class Animal {
     }
 
     # method destroy - menghapus hewan
-    # parameter: index
+
     public function destroy($index) {
         if (isset($this->animal[$index])) {
             $deletedAnimal = $this->animal[$index];
